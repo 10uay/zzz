@@ -5,8 +5,8 @@ export default function Home() {
     <div className="container mx-auto md:px-2 max-w-screen-xl relative">
       <img
         src="/media/home-img.jpg"
-        alt=""
-        className="rounded-2xl shadow-gray-400 shadow-lg"
+        alt="muafa"
+        className="rounded-2xl shadow-gray-400 shadow-lg mb-28"
       />
       <div className="absolute top-[65%] left-1/2 transform translate-x-[-50%] text-3xl font-bold text-main_color py-3 px-8">
         <span className="relative z-10">'نحن هنا لمساعدتك على التحسن!'</span>

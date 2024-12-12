@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 * {
   font-family: Poppins, sans-serif;
   margin: 0;
@@ -12,29 +10,27 @@
 }
 
 ::-webkit-scrollbar {
-  width: .25rem;
+  width: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
   --tw-bg-opacity: 1;
-  background-color: #49ceb4
+  background-color: #49ceb4;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246)
+  background-color: rgb(243 244 246);
 }
-
-
 
 .text-text-light {
   --tw-text-opacity: 1;
-  color: rgb(115 113 149/var(--tw-text-opacity))
+  color: rgb(115 113 149 / var(--tw-text-opacity));
 }
 
 /* slider component */

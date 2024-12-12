@@ -18,9 +18,11 @@ import MyFooter from "./components/MyFooter";
 function App() {
   // const lang = cookies.get("i18next") || "en";
 
-  // useEffect(() => {
-  //   window.document.dir = i18n.dir();
-  // }, [lang]);
+  useEffect(() => {
+    window.document.dir = 'rtl';
+  }, []);
+
+
 
   return (
     <>
