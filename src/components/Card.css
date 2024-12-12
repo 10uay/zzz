@@ -1,0 +1,30 @@
+.card {
+  position: relative;
+}
+.card::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* opacity: .5; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: #318D8B;
+  z-index: -1;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  /* opacity: .5; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: #318D8B;
+  opacity: .5;
+  z-index: -2;
+}
