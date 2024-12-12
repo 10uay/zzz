@@ -10,24 +10,24 @@ export default function NavbarWithMegaMenu() {
       >
         <Navbar.Brand className=" select-none">
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Muafa
+            معافى
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">
           <Button className="!bg-main_color">
-            <Link to="/user/profile/view-orders">My orders</Link>
+            <Link to="/user/profile/view-orders">طلباتي</Link>
           </Button>
           <Navbar.Toggle className="ms-3 md:ms-0" />
         </div>
         <Navbar.Collapse>
           <Navbar.Link active className="text-[16px] font-bold">
-            <Link to="/">Home</Link>
+            <Link to="/">الرئيسية</Link>
           </Navbar.Link>
           <Navbar.Link className="text-[16px] font-bold">
-            <Link to="/about">About</Link>
+            <Link to="/about">حول</Link>
           </Navbar.Link>
           <Navbar.Link className="text-[16px] font-bold">
-            <Link to="/contact-us">Contact</Link>
+            <Link to="/contact-us">اتصل بنا</Link>
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>

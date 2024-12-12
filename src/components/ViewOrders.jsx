@@ -2,10 +2,10 @@ import { Card } from './Card';
 import { useState } from '@/utils/Imports';
 
 export default function ViewOrders() {
-  const [orderNo,setOrderNo] = useState("user");
+  const [orderNo, setOrderNo] = useState("user");
 
   return (
-    <div className='mt-10'>
+    <div className="mt-10 my-80 ">
       <div className="flex items-center justify-center gap-7 flex-col lg:flex-row">
         <div onClick={() => setOrderNo("user")}>
           <Card content_of_card={"243856"} number={"1"} />

@@ -18,7 +18,7 @@ export default function LogIn() {
       {/* user / employee */}
       <div className="container mx-auto px-3 mt-10">
         <span className="block text-center w-full mx-auto mb-6 text-[28px] text-secondary_color">
-          Log in to the required service
+          قم بتسجيل الدخول إلى الخدمة المطلوبة
         </span>
         <div className="flex items-center justify-center gap-7 flex-col lg:flex-row">
           <div onClick={() => setClasification("user")}>
@@ -30,7 +30,7 @@ export default function LogIn() {
           </div>
           <div onClick={() => setClasification("employee")}>
             <Card
-              content_of_card={"employee"}
+              content_of_card={"موظف"}
               number={"2"}
               clasification={clasification}
             />

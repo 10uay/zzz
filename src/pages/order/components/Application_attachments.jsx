@@ -101,11 +101,7 @@ export default function Application_attachments({
     <div className="flex flex-col gap-6">
       <div className="bg-gray-500 bg-opacity-10 pb-10 pt-4 shadow-lg">
         <div className="container p-3 max-w-3xl mx-auto mb-4">
-          <FixedNotification
-            text="Personal Information"
-            color="#fff"
-            opacity="100"
-          />
+          <FixedNotification text="مرفقات الطلب" color="#fff" opacity="100" />
         </div>
         <div className="container p-3 max-w-3xl mx-auto flex flex-col gap-8">
           {/* line one */}
@@ -131,7 +127,7 @@ export default function Application_attachments({
             <div className="flex-1">
               <Label
                 htmlFor="proof_of_insurance_refusal"
-                value="proof of insurance refusal:"
+                value="دليل على رفض التأمين:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
@@ -149,7 +145,7 @@ export default function Application_attachments({
             <div className="flex-1 cursor-pointer">
               <Label
                 htmlFor="recent_medical_report"
-                value="Recent medical report:"
+                value="تقرير طبي حديث:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
@@ -167,7 +163,7 @@ export default function Application_attachments({
             <div className="flex-1">
               <Label
                 htmlFor="cost_letter"
-                value="Cost letter:"
+                value="خطاب التكلفة:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
@@ -185,7 +181,7 @@ export default function Application_attachments({
             <div className="flex-1">
               <Label
                 htmlFor="medical_report_date"
-                value="Medical report date:"
+                value="تاريخ التقرير الطبي:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
@@ -203,7 +199,7 @@ export default function Application_attachments({
             <div className="flex-1">
               <Label
                 htmlFor="service_provider"
-                value="Service provider:"
+                value="مزود الخدمة:"
                 className="block mb-1 ms-[5px] text-xl"
               />
               <Dropdown
@@ -255,7 +251,7 @@ export default function Application_attachments({
             />
             <Label
               htmlFor="discounts"
-              value="Take advantage of the discounts only and bear the bull cost!"
+              value="استفيد من الخصومات فقط وتحمل كامل التكلفة!"
               className="block text-lg ms-[5px] !cursor-pointer"
             />
           </div>
@@ -265,8 +261,8 @@ export default function Application_attachments({
               className="mx-auto w-fit text-center shadow-md select-none"
               color="blue"
             >
-              A new and detailed medical report not exceeding 75 days, with the
-              hospital stamp and the treating physiciac's stamp.
+              تقرير طبي جديد ومفصل لا يتجاوز تاريخه 75 يوماً مختوماً بختم
+              المستشفى وختم الطبيب المعالج.
             </Alert>
           </div>
         </div>
@@ -277,13 +273,13 @@ export default function Application_attachments({
           onClick={() => handelApplication_attachments()}
           className="min-w-28 bg-main_color"
         >
-          Next
+          التالي
         </Button>
         <Button
           onClick={() => setPageNumber(2)}
           className="min-w-28 bg-secondary_color"
         >
-          Prev
+          السابق
         </Button>
       </div>
       <div>

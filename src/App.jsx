@@ -13,6 +13,7 @@ import ContactUs from "./pages/ContactUs";
 import DeleteOrder from "./components/DeleteOrder";
 import EditOrder from "./components/EditOrder";
 import ViewOrders from "./components/ViewOrders";
+import MyFooter from "./components/MyFooter";
 
 function App() {
   // const lang = cookies.get("i18next") || "en";
@@ -42,6 +43,9 @@ function App() {
             <Route path="new-order" element={<Order />} />
           </Route>
         </Routes>
+        <footer>
+          <MyFooter/>
+        </footer>
       </BrowserRouter>
     </>
   );

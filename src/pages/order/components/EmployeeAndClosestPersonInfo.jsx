@@ -66,7 +66,7 @@ export default function EmployeeAndClosestPersonInfo({
       <div className="bg-gray-500 bg-opacity-10 pb-10 pt-4 shadow-lg">
         <div className="container p-3 max-w-3xl mx-auto mb-4">
           <FixedNotification
-            text="Personal Information"
+            text="معلومات الموظف والشخص الأقرب"
             color="[#fff]"
             opacity="100"
           />
@@ -78,7 +78,7 @@ export default function EmployeeAndClosestPersonInfo({
             <div className="flex-1">
               <Label
                 htmlFor="employer"
-                value="Employer:"
+                value="صاحب العمل:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
@@ -99,7 +99,7 @@ export default function EmployeeAndClosestPersonInfo({
               />
               <TextInput
                 type="text"
-                placeholder="type of active"
+                placeholder="نوع العمل"
                 value={type_of_active}
                 required
                 id="type_of_active"
@@ -113,7 +113,7 @@ export default function EmployeeAndClosestPersonInfo({
             <div className="flex-1">
               <Label
                 htmlFor="work_phone"
-                value="work phone:"
+                value="هاتف العمل:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
@@ -129,12 +129,12 @@ export default function EmployeeAndClosestPersonInfo({
             <div className="flex-1">
               <Label
                 htmlFor="name_of_relative"
-                value="Type of active:"
+                value="اسم القريب:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
                 type="text"
-                placeholder="type of active"
+                placeholder="name of relative"
                 value={name_of_relative}
                 required
                 id="name_of_relative"
@@ -148,7 +148,7 @@ export default function EmployeeAndClosestPersonInfo({
             <div className="flex-1">
               <Label
                 htmlFor="relationship"
-                value="Relationship:"
+                value="صلة القرابة:"
                 className="block text-lg ms-[5px]"
               />
               <TextInput
@@ -169,7 +169,7 @@ export default function EmployeeAndClosestPersonInfo({
               />
               <TextInput
                 type="number"
-                placeholder="relative mobile"
+                placeholder="جوال القريب"
                 value={relative_mobile}
                 required
                 id="relative_mobile"
@@ -185,13 +185,13 @@ export default function EmployeeAndClosestPersonInfo({
           onClick={() => handelEmployeeAndClosestPersonInfo()}
           className="min-w-28 bg-main_color"
         >
-          Next
+          التالي
         </Button>
         <Button
           onClick={() => setPageNumber(2)}
           className="min-w-28 bg-secondary_color"
         >
-          Prev
+          السابق
         </Button>
       </div>
       <div>

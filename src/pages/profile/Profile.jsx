@@ -17,24 +17,24 @@ export default function Profile() {
       >
         <Navbar.Brand className=" select-none">
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            My orders
+            طلباتي
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">
           <Button className="!bg-main_color">
-            <Link to="/user/profile/new-order">Create new one</Link>
+            <Link to="/user/profile/new-order">اضافة طلب</Link>
           </Button>
           <Navbar.Toggle className="ms-3 md:ms-0" />
         </div>
         <Navbar.Collapse>
           <Navbar.Link href="#" active className="text-[16px] font-bold">
-            <Link to="view-orders">View</Link>
+            <Link to="view-orders">عرض</Link>
           </Navbar.Link>
           <Navbar.Link className="text-[16px] font-bold">
-            <Link to="edit-order">Edit</Link>
+            <Link to="edit-order">تعديل</Link>
           </Navbar.Link>
           <Navbar.Link href="#" className="text-[16px] font-bold">
-            <Link to="delete-order">Delete</Link>
+            <Link to="delete-order">حذف</Link>
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>

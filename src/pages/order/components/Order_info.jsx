@@ -14,14 +14,14 @@ export default function Order_info({
   order_index,
   setPageNumber,
 }) {
-  const [typeOfService, setTypeOfService] = useState("select one");
-  const [section, setSection] = useState("select one");
-  const [description, setDescription] = useState("select one");
+  const [typeOfService, setTypeOfService] = useState("اختر");
+  const [section, setSection] = useState("اختر");
+  const [description, setDescription] = useState("اختر");
   const [error, setError] = useState("");
 
   const handelOrderInfo = () => {
     setError("");
-    if (typeOfService === "select one" || section === "select one") {
+    if (typeOfService === "اختر" || section === "اختر") {
       setError("Please fill out all required fields");
       return;
     }
@@ -49,7 +49,7 @@ export default function Order_info({
       <div className="bg-gray-500 bg-opacity-10 pb-10 pt-4 shadow-lg">
         <div className="container p-3 max-w-3xl mx-auto mb-4">
           <FixedNotification
-            text="Order Information"
+            text="معلومات الطلب"
             color="#fff"
             opacity="100"
           />
@@ -60,7 +60,7 @@ export default function Order_info({
             <div className="flex-1">
               <Label
                 htmlFor="type_of_Service"
-                value="Type of service:"
+                value="نوع الخدمة:"
                 className="block mb-1 text-lg ms-[5px]"
               />
               <Dropdown
@@ -73,21 +73,21 @@ export default function Order_info({
                 className="shadow-lg shadow-blue-gray-800 min-w-full"
               >
                 <Dropdown.Item
-                  value="options 1"
+                  value="خيار 1"
                   onClick={() => setTypeOfService("options 1")}
                   className="justify-center"
                 >
                   option 1
                 </Dropdown.Item>
                 <Dropdown.Item
-                  value="options 2"
+                  value="خيار 2"
                   onClick={() => setTypeOfService("options 2")}
                   className="justify-center"
                 >
                   option 2
                 </Dropdown.Item>
                 <Dropdown.Item
-                  value="options 3"
+                  value="خيار 3"
                   onClick={() => setTypeOfService("options 3")}
                   className="justify-center"
                 >
@@ -99,7 +99,7 @@ export default function Order_info({
             <div className="flex-1">
               <Label
                 htmlFor="section"
-                value="Section:"
+                value="القسم:"
                 className="block mb-1 ms-[5px] text-xl"
               />
               <Dropdown
@@ -112,21 +112,21 @@ export default function Order_info({
                 className="shadow-lg shadow-blue-gray-800 min-w-full"
               >
                 <Dropdown.Item
-                  value="options 1"
+                  value="خيار 1"
                   onClick={() => setSection("options 1")}
                   className="justify-center"
                 >
                   option 1
                 </Dropdown.Item>
                 <Dropdown.Item
-                  value="options 2"
+                  value="خيار 2"
                   onClick={() => setSection("options 2")}
                   className="justify-center"
                 >
                   option 2
                 </Dropdown.Item>
                 <Dropdown.Item
-                  value="options 3"
+                  value="خيار 3"
                   onClick={() => setSection("options 3")}
                   className="justify-center"
                 >
@@ -139,7 +139,7 @@ export default function Order_info({
           <div>
             <Label
               htmlFor="desicription"
-              value="Description:"
+              value="الوصف:"
               style={{
                 fontSize: "18px",
                 marginInlineStart: "5px",
@@ -164,7 +164,7 @@ export default function Order_info({
           onClick={() => handelOrderInfo()}
           className="min-w-28 mx-auto bg-main_color"
         >
-          Next
+          التالي
         </Button>
       </div>
       <div>

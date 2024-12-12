@@ -9,12 +9,12 @@ export default function DeleteOrder() {
       <div className="flex-1">
         <Label
           htmlFor="order-number"
-          value="order number:"
+          value="رقم الطلب:"
           className="block mb-1 text-lg ms-[5px]"
         />
         <TextInput
           type="number"
-          placeholder="username"
+          placeholder="الرقم"
           value={orderNo}
           required
           id="order-number"
@@ -25,7 +25,7 @@ export default function DeleteOrder() {
         onChange={(e) => setOrderNo(e.target.value)}
         className="min-w-28 "
       >
-        Delete
+        حذف
       </Button>
     </div>
   );

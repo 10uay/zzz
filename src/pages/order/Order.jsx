@@ -15,7 +15,7 @@ export default function Order() {
   return (
     <div>
       <div className="container p-3 max-w-3xl mx-auto mb-4">
-        <FixedNotification text="Submit an application" />
+        <FixedNotification text="تقديم طلب" />
       </div>
       {pageNumber === 1 ? (
         <Order_info

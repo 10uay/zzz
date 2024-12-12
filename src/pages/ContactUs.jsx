@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ContactUs() {
   return (
-    <div>
+    <div className="min-h-svh">
       <img
         src="/media/logo.png"
         alt=""

@@ -97,7 +97,7 @@ export default function SignupForm() {
         <div className="flex-1">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
-              <Label htmlFor="username" value="Your username" />
+              <Label htmlFor="username" value="اسم المستخدم" />
               <TextInput
                 type="text"
                 required
@@ -108,7 +108,7 @@ export default function SignupForm() {
               />
             </div>
             <div>
-              <Label htmlFor="mobile" value="Your mobile phone" />
+              <Label htmlFor="mobile" value="رقم الجوال" />
               <TextInput
                 type="number"
                 required
@@ -118,7 +118,7 @@ export default function SignupForm() {
               />
             </div>
             <div className="flex items-center justify-between">
-              <Label htmlFor="type_of_Id" value="Your Id type:" />
+              <Label htmlFor="type_of_Id" value="نوع الهوية:" />
               <Dropdown
                 label={typeOfId}
                 size="md"
@@ -148,7 +148,7 @@ export default function SignupForm() {
               </Dropdown>
             </div>
             <div>
-              <Label htmlFor="number_of_Id" value="Your Id number" />
+              <Label htmlFor="number_of_Id" value="رقم الهوية" />
               <TextInput
                 type="number"
                 required
@@ -159,7 +159,7 @@ export default function SignupForm() {
               />
             </div>
             <div>
-              <Label htmlFor="password" value="Your password" />
+              <Label htmlFor="password" value="كلمة السر" />
               <TextInput
                 type="password"
                 required
@@ -170,10 +170,7 @@ export default function SignupForm() {
               />
             </div>
             <div>
-              <Label
-                htmlFor="new-confirm-password"
-                value="Confirm your password"
-              />
+              <Label htmlFor="new-confirm-password" value="تأكيد كلمة السر" />
               <TextInput
                 type="password"
                 required
@@ -201,9 +198,9 @@ export default function SignupForm() {
           </form>
 
           <div className="flex gap-2 text-sm mt-5">
-            <span>Have an account?</span>
+            <span>هل لديك حساب؟</span>
             <Link to="/log-in" className="text-main_color capitalize">
-              log In
+              تسجيل الدخول
             </Link>
           </div>
           {error && (

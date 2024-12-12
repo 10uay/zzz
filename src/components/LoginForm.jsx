@@ -85,7 +85,11 @@ export default function LogInForm({ clasification }) {
         <div className="flex-1">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
-              <Label htmlFor="number_of_Id" value="Username" className="ps-2" />
+              <Label
+                htmlFor="number_of_Id"
+                value="اسم المستفيد"
+                className="ps-2"
+              />
               <TextInput
                 type="number"
                 required
@@ -96,11 +100,7 @@ export default function LogInForm({ clasification }) {
               />
             </div>
             <div>
-              <Label
-                htmlFor="password"
-                value="Your password"
-                className="ps-2"
-              />
+              <Label htmlFor="password" value="كلمة السر" className="ps-2" />
               <TextInput
                 type="password"
                 required
@@ -127,15 +127,15 @@ export default function LogInForm({ clasification }) {
           </form>
 
           <div className="flex gap-2 text-sm mt-5">
-            <span>Don't have an account?</span>
+            <span>ليس لديك حساب؟</span>
             <Link to="/sign-up" className="text-main_color capitalize">
-              Sign Up
+              اشتراك
             </Link>
           </div>
           <div className="flex gap-2 text-sm mt-2">
-            <span>Forget your password?</span>
+            <span>هل نسيت كلمة المرور؟</span>
             <Link to="/forget-password" className="text-main_color capitalize">
-              just click
+              فقط انقر
             </Link>
           </div>
           {error && (

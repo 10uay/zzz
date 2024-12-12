@@ -18,13 +18,13 @@ export default function Personal_info({
 }) {
   const [date_of_birth, setDate_of_birth] = useState();
   const [age, setAge] = useState();
-  const [gender, setGender] = useState("select one");
+  const [gender, setGender] = useState("اختر");
   const [nationality, setNationality] = useState();
   const [id_expiry_date, setId_expiry_date] = useState();
   const [province, setProvince] = useState();
   const [city, setCity] = useState();
   const [current_work, setCurrent_work] = useState();
-  const [insurance, setInsurance] = useState("select one");
+  const [insurance, setInsurance] = useState("اختر");
   const [error, setError] = useState("");
 
   const handelPersonalInfo = () => {
@@ -33,13 +33,13 @@ export default function Personal_info({
     if (
       !date_of_birth ||
       !age ||
-      gender === "select one" ||
+      gender === "اختر" ||
       !nationality ||
       !id_expiry_date ||
       !province ||
       !city ||
       !current_work ||
-      insurance === "select one"
+      insurance === "اختر"
     ) {
       setError("Please fill out all required fields");
       return;
@@ -74,7 +74,7 @@ export default function Personal_info({
       <div className="bg-gray-500 bg-opacity-10 pb-10 pt-4 shadow-lg">
         <div className="container p-3 max-w-3xl mx-auto mb-4">
           <FixedNotification
-            text="Personal Information"
+            text="معلومات شخصية"
             color="#fff"
             opacity="100"
           />
@@ -86,7 +86,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="Username"
-                value="Username:"
+                value="اسم المستفيد:"
                 className="block mb-1 text-lg ms-[5px]"
               />
               <TextInput
@@ -102,7 +102,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="Date"
-                value="Date:"
+                value="تاريخ الميلاد:"
                 className="block mb-1 text-lg ms-[5px]"
               />
               <TextInput
@@ -121,7 +121,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="type of Id"
-                value="Type of Id:"
+                value="نوع الهوية :"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <Dropdown
@@ -139,7 +139,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="nationality"
-                value="Nationality:"
+                value="الجنسية:"
                 className="block mb-1 text-lg ms-[5px]"
               />
               <TextInput
@@ -158,7 +158,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="number of Id"
-                value="Number of Id:"
+                value="رقم الهوية:"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <TextInput
@@ -180,7 +180,7 @@ export default function Personal_info({
               />
               <TextInput
                 type="date"
-                placeholder="Id expiry date"
+                placeholder="تاريخ انتهاء الهوية"
                 required
                 id="id_expiry_date"
                 className="flex-1"
@@ -194,7 +194,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="age"
-                value="Age:"
+                value="العمر:"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <TextInput
@@ -210,7 +210,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="mobile"
-                value="Mobile:"
+                value="رقم الجوال:"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <TextInput
@@ -227,7 +227,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="gender"
-                value="Gender:"
+                value="الجنس:"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <Dropdown
@@ -262,7 +262,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="province"
-                value="Province:"
+                value="المنطقة:"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <TextInput
@@ -279,7 +279,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="city"
-                value="City:"
+                value="المدينة:"
                 className="block mb-1 text-lg ms-[5px]"
               />
               <TextInput
@@ -298,7 +298,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="current_work"
-                value="Current work:"
+                value="العمل الحالي:"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <TextInput
@@ -314,7 +314,7 @@ export default function Personal_info({
             <div className="flex-1">
               <Label
                 htmlFor="Insurance"
-                value="Insurance:"
+                value="نوع التأمين الطبي:"
                 className="block mb-1 ms-[5px] text-lg"
               />
               <Dropdown
@@ -351,13 +351,13 @@ export default function Personal_info({
           onClick={() => handelPersonalInfo()}
           className="min-w-28 bg-main_color"
         >
-          Next
+          التالي
         </Button>
         <Button
           onClick={() => setPageNumber(1)}
           className="min-w-28 bg-secondary_color"
         >
-          Prev
+          السابق
         </Button>
       </div>
       <div>
