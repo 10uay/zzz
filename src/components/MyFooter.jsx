@@ -18,7 +18,7 @@ export default function MyFooter() {
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className="mx-auto lg:mx-0">
             <Footer.Brand
-              href="https://flowbite.com"
+              href="#"
               src="/media/logo.png"
               alt="muafa Logo"
               className="fotter-logo"
